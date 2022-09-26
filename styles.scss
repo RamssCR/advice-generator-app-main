@@ -1,0 +1,98 @@
+@use 'variables' as v;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: v.$DarkBlue;
+    color: v.$LightCyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: v.$fontFamily;
+}
+
+.main-content{
+    max-width: 21.5em;
+    text-align: center;
+    background-color: v.$DarkGrayishBlue;
+    padding: 2.6em 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+    border-radius: 0.9em;
+    position: relative;
+
+    @media only screen and (min-width: 1115px) {
+        max-width: 33.5em;
+        padding: 2.6em 2em;
+    }
+
+    .advice-number{
+        color: v.$NeonGreen;
+        font-size: 0.9em;
+        letter-spacing: 3px;
+    }
+
+    .advice{
+        font-size: v.$fontSize;
+        margin-bottom: 0.3em;
+    }
+
+    .pattern-mobile{
+        margin-bottom: 1.5em;
+
+        @media only screen and (min-width: 1115px){
+            display: none;
+        }
+    }
+
+    .pattern-desktop{
+        display: none;
+
+        @media only screen and (min-width: 1115px){
+            display: block;
+            margin-bottom: 1.5em;
+            width: 28em;
+        }
+    }
+
+    .btn-dice{
+        background-color: v.$NeonGreen;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        bottom: -2.5em;
+        transition: 300ms;
+        outline: none;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 2em v.$NeonGreen;
+        }
+    }
+}
+
+.attribution{
+    color: v.$LightCyan;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 1em;
+
+    a{
+        text-decoration: none;
+        color: v.$NeonGreen;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

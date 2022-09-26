@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218deg, 23%, 16%);
+  color: hsl(193deg, 38%, 86%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-content {
+  max-width: 21.5em;
+  text-align: center;
+  background-color: hsl(217deg, 19%, 24%);
+  padding: 2.6em 1.1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3em;
+  border-radius: 0.9em;
+  position: relative;
+}
+@media only screen and (min-width: 1115px) {
+  .main-content {
+    max-width: 33.5em;
+    padding: 2.6em 2em;
+  }
+}
+.main-content .advice-number {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 0.9em;
+  letter-spacing: 3px;
+}
+.main-content .advice {
+  font-size: 28px;
+  margin-bottom: 0.3em;
+}
+.main-content .pattern-mobile {
+  margin-bottom: 1.5em;
+}
+@media only screen and (min-width: 1115px) {
+  .main-content .pattern-mobile {
+    display: none;
+  }
+}
+.main-content .pattern-desktop {
+  display: none;
+}
+@media only screen and (min-width: 1115px) {
+  .main-content .pattern-desktop {
+    display: block;
+    margin-bottom: 1.5em;
+    width: 28em;
+  }
+}
+.main-content .btn-dice {
+  background-color: hsl(150deg, 100%, 66%);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  bottom: -2.5em;
+  transition: 300ms;
+  outline: none;
+}
+.main-content .btn-dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2em hsl(150deg, 100%, 66%);
+}
+
+.attribution {
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(150deg, 100%, 66%);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */
